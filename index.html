@@ -11,7 +11,10 @@
 <body>
     <nav>
         <div class="logo">Sydney.</div>
-        <div class="nav-links">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links desktop-nav">
             <a href="#home" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
@@ -19,23 +22,51 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="logo">Sydney.</div>
+            <button class="close-menu" aria-label="Close navigation">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="sidebar-social">
+            <a href="https://www.facebook.com/profile.php?id=61558644646443"><i class="fab fa-facebook-f"></i></a>
+            <a href="www.linkedin.com/in/sydney-mulando-955a81377"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/sydneymulando/sydneymulando"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
 
     <main id="home">
         <div class="hero-content">
-            <h1>Hi, I'm Sydney Mulando</h1>
-            <h2>Software Engineer</h2>
-            <p>Hello, I'm Sydney Mulando, a dedicated software engineer specializing in the development of AI powered software applications, AI automations, Machine Learning Models, and robust enterprise-level backend solutions. My expertise spans a diverse range of applications, including information systems, web applications, and mobile platforms. I am passionate about leveraging cutting-edge technologies to create innovative solutions that drive efficiency and enhance user experiences.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn primary">Work With Me</a>
-                <a href="assets/Syd's CV 2.0.pdf" class="btn secondary" download>Download CV</a>
+            <div class="hero-text-content">
+                <h1>Hi, I'm Sydney Mulando</h1>
+                <h2>Software Engineer</h2>
+                <p>Hello, I'm Sydney Mulando, a dedicated software engineer specializing in the development of AI powered software applications, AI automations, Machine Learning Models, and robust enterprise-level backend solutions. My expertise spans a diverse range of applications, including information systems, web applications, and mobile platforms. I am passionate about leveraging cutting-edge technologies to create innovative solutions that drive efficiency and enhance user experiences.</p>
             </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61558644646443"><i class="fab fa-facebook-f"></i></a>                
-                <a href="www.linkedin.com/in/sydney-mulando-955a81377"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/sydneymulando/sydneymulando"><i class="fab fa-github"></i></a>
+            <div class="hero-image-mobile">
+                <img src="assets/syd=black t.png" alt="Sydney Mulando">
+            </div>
+            <div class="hero-actions">
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn primary">Work With Me</a>
+                    <a href="assets/Syd's CV 2.0.pdf" class="btn secondary" download>Download CV</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61558644646443"><i class="fab fa-facebook-f"></i></a>                
+                    <a href="www.linkedin.com/in/sydney-mulando-955a81377"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/sydneymulando/sydneymulando"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image-desktop">
             <img src="assets/syd=black t.png" alt="Sydney Mulando">
         </div>
     </main>

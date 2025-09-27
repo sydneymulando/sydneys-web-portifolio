@@ -159,3 +159,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Mobile navigation functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const closeMenu = document.querySelector('.close-menu');
+const mobileSidebar = document.getElementById('mobileSidebar');
+const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        mobileSidebar.classList.add('active');
+        mobileNavOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
+if (closeMenu) {
+    closeMenu.addEventListener('click', () => {
+        mobileSidebar.classList.remove('active');
+        mobileNavOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
+
+if (mobileNavOverlay) {
+    mobileNavOverlay.addEventListener('click', () => {
+        mobileSidebar.classList.remove('active');
+        mobileNavOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
+
+// Close mobile menu when clicking on a nav link
+const mobileNavLinks = document.querySelectorAll('.mobile-sidebar .nav-links a');
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileSidebar.classList.remove('active');
+        mobileNavOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+});

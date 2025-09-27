@@ -11,7 +11,10 @@
 <body>
     <nav>
         <div class="logo">Sydney.</div>
-        <div class="nav-links">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links desktop-nav">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
@@ -19,6 +22,27 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="logo">Sydney.</div>
+            <button class="close-menu" aria-label="Close navigation">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="sidebar-social">
+            <a href="https://www.facebook.com/profile.php?id=61558644646443"><i class="fab fa-facebook-f"></i></a>
+            <a href="www.linkedin.com/in/sydney-mulando-955a81377"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/sydneymulando/sydneymulando"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
 
     <main class="portfolio-section">
         <h1>My Projects</h1>
